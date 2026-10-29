@@ -1,4 +1,4 @@
-﻿import sys, os, json
+import sys, os, json
 sys.path.insert(0, os.path.dirname(__file__))
 import numpy as np, pandas as pd, lib
 tr = lib.load_uesolds_train(lib.DATA/"plmsol_train_dataset.fasta"); te = lib.load_uesolds(lib.DATA/"plmsol_test_dataset.fasta")

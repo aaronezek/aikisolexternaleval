@@ -1,4 +1,4 @@
-﻿"""Fig 1 (ROC + PR with bootstrap bands) and Fig 2 (reliability) from results/eval_scores_all_models.csv."""
+"""Fig 1 (ROC + PR with bootstrap bands) and Fig 2 (reliability) from results/eval_scores_all_models.csv."""
 import sys, os, json
 sys.path.insert(0, os.path.dirname(__file__))
 import numpy as np, pandas as pd, lib

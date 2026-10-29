@@ -1,4 +1,4 @@
-﻿\documentclass[10pt]{article}
+\documentclass[10pt]{article}
 \usepackage[margin=0.7in]{geometry}
 \usepackage{graphicx,booktabs,amsmath,caption,array}
 \graphicspath{{../figures/}{figures/}}
@@ -6,7 +6,8 @@
 \setlength{\parindent}{0pt}\setlength{\parskip}{3pt}
 \renewcommand{\arraystretch}{1.05}
 \title{\vspace{-1.2cm}\textbf{An independent external evaluation of the Aiki-Sol public beta\\ for protein solubility prediction}\vspace{-0.3cm}}
-\author{\small Independent user evaluation, prepared for Aikium, Inc.}
+\newcommand{\authorname}{Aaron Ezekiel}
+\author{\small \authorname, undergraduate, UC Berkeley\\ \small Independent evaluation, prepared for Aikium, Inc.}
 \date{\small October 2026}
 \begin{document}\maketitle\vspace{-0.9cm}
 \begin{abstract}\small\noindent
@@ -35,7 +36,7 @@ Majority class & 0.500 & -- & 0 & -- & --\\\bottomrule
 \caption{ROC (a) and precision--recall (b) curves on 500 UESolDS test sequences (250 soluble); legend gives AUROC. Bands: 95\% pointwise percentile intervals over 1,000 bootstrap resamples. Dotted lines: chance. Aiki-Sol's band does not overlap the baselines' over most of the range.}
 \end{figure}
 \textbf{Leakage and confounding (central to interpretation).} 324/500 evaluated sequences (64.8\%; 2,594/4,000 in the full split) are exact matches to the released training list. AUROC was 0.912 (0.880--0.940) on those and 0.741 (0.668--0.807) on the 176 non-matches (logistic regression 0.638 and 0.519). Exact matches mean the sequence was seen in training, not that its label was identical, and the two strata differ in source mix, so the gap is suggestive rather than a clean memorisation estimate. Near-identical homologues may remain among the non-matches. Separately, labels track the contributing consortium: all 113 PDB-derived sequences are soluble, and consortium identity alone (in-sample) gives AUROC 0.825. Within consortia Aiki-Sol still ranks well (JCSG, $n{=}98$: 0.732, 0.628--0.827; MCSG, $n{=}94$: 0.890, 0.816--0.946), so the signal is not only source.\\
-\textbf{Calibration (claim tested directly).} The marginal output was well calibrated on this balanced set: Brier 0.156 (0.135--0.178) versus 0.254 for logistic regression, ECE 0.044 (0.036--0.091), intercept $+0.03$, slope 0.85 (mild overconfidence); mean prediction 0.492 against 0.500 observed (Fig.~2). Regime-specific outputs were less calibrated here (ECE 0.055--0.132; PURE 0.250, mean 0.75), as expected when labels do not follow those protocols; this does not test their per-protocol claim.\\
+\textbf{Calibration (claim tested directly).} The marginal output was reasonably calibrated on this balanced set: Brier 0.156 (0.135--0.178) versus 0.254 for logistic regression, ECE 0.044 (0.036--0.091), intercept $+0.03$, slope 0.85 (mild overconfidence); mean prediction 0.492 against 0.500 observed (Fig.~2). Regime-specific outputs were less calibrated here (ECE 0.055--0.132; PURE 0.250, mean 0.75), as expected when labels do not follow those protocols; this does not test their per-protocol claim.\\
 \begin{minipage}[t]{0.34\linewidth}\vspace{0pt}\centering\includegraphics[width=\linewidth]{fig2_calibration.pdf}
 \captionof{figure}{Reliability of predicted probability (equal-frequency deciles, $n{\approx}50$; 95\% Wilson intervals), Aiki-Sol marginal vs.\ logistic regression.}\end{minipage}\hfill
 \begin{minipage}[t]{0.63\linewidth}\vspace{0pt}\small

@@ -1,4 +1,4 @@
-﻿
+
 """Milestones 3-4: baselines + evaluation. PRIMARY = AUROC of Aiki-Sol prob_marginal on the 500-sequence UESolDS sample (pre-registered).
 Everything else is secondary/exploratory and labelled as such in the output tables."""
 import sys, os, json

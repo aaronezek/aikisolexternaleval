@@ -4,8 +4,8 @@
 |---|---|---|
 | `pip install aikisol` | **Does not work as advertised**: package is not on PyPI (HTTP 404 on pypi.org/pypi/aikisol/json). | README and landing page both say `pip install aikisol`. |
 | Install from GitHub source | **Works** (no pip needed): 4 source files of github.com/aikium-public/aiki-sol (commit d8fcbf86) run unmodified on CPU/Windows with torch 2.15 + transformers 4.57. | `code/local_aikisol.py`; 40 sequences scored in 67 s after a 14 s model load. |
-| Model weights | Zenodo 10.5281/zenodo.20151817 (record 20171586), `aikisol_v2_canonical_147k_full.pt`, 2,605,701,359 bytes, MD5 92ab0cc77dfaa78a66094dbf9493b38d verified against Zenodo checksum. Needs zenodo.org + huggingface.co (tokenizer/config) access. | `logs/download_ckpt.log` |
-| Docker (`ghcr.io/aikium-public/aiki-sol:full`) | **Not tried**: Docker is not installed on this machine and ghcr.io is not on the sandbox allowlist. | `where docker` returns nothing |
+| Model weights | Zenodo 10.5281/zenodo.20151817 (record 20171586), `aikisol_v2_canonical_147k_full.pt`, 2,605,701,359 bytes, MD5 92ab0cc77dfaa78a66094dbf9493b38d verified against Zenodo checksum. Needs access to zenodo.org and huggingface.co (tokenizer/config). | `logs/download_ckpt.log` |
+| Docker (`ghcr.io/aikium-public/aiki-sol:full`) | **Not tried**: Docker is not installed on the machine I used, and ghcr.io was not reachable from it. | `where docker` returns nothing |
 | REST `GET /lookup_protein?seq=` | **Works** | 44/44 HTTP 200, median latency 1.3 s (p95 2.8 s, max 3.0 s) at 1 s spacing; no throttling observed. No burst test was run (deliberately not hammering the server). |
 | REST `POST /predict_fasta` (json / csv) | **Works** (tested with 2 sequences each). | `logs/api_requests.jsonl` |
 | Web UI | Not used (and not scraped). | - |

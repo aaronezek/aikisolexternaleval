@@ -1,4 +1,4 @@
-﻿
+
 """M5 probes, local route (exploratory). Tag stripping with length-matched controls, determinism, robustness."""
 import sys, os, json
 sys.path.insert(0, os.path.dirname(__file__))

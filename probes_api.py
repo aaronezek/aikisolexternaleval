@@ -1,4 +1,4 @@
-﻿"""M5 probes against the HOSTED API (exploratory). Reuses lib.AikiSolAPI (every request counted/logged)."""
+"""M5 probes against the HOSTED API (exploratory). Reuses lib.AikiSolAPI (every request counted/logged)."""
 import sys, os, json, time
 sys.path.insert(0, os.path.dirname(__file__))
 import numpy as np, pandas as pd, lib

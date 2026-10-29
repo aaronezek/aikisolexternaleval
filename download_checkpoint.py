@@ -1,8 +1,8 @@
 
 import requests, json, hashlib, time
-j=json.load(open("aikisol_eval/data/zenodo_record.json"))
+j=json.load(open("data/zenodo_record.json"))
 f=[x for x in j["files"] if x["key"]=="apache_tier__aikisol_v2_canonical_147k_full.pt"][0]
-url=f["links"]["self"]; out="aikisol_eval/data/zenodo/aikisol_v2_canonical_147k_full.pt"
+url=f["links"]["self"]; out="data/zenodo/aikisol_v2_canonical_147k_full.pt"
 print(f["checksum"], f["size"], flush=True)
 t=time.time(); h=hashlib.md5(); n=0
 with requests.get(url, stream=True, timeout=120) as r:

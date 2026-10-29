@@ -1,5 +1,5 @@
 
-"""Shared, verified-once library for the Aiki-Sol external evaluation. Reuse; do not fork."""
+"""Shared helpers for the Aiki-Sol external evaluation: data loaders, metrics, bootstrap, calibration, and a request-counting REST wrapper."""
 import os, re, json, time, hashlib, math
 from pathlib import Path
 import numpy as np, pandas as pd
