@@ -1,0 +1,57 @@
+{
+ "n_soluble": 20,
+ "n_insoluble": 20,
+ "summary": {
+  "prob_marginal": {
+   "mean_soluble": 0.9070037603378296,
+   "mean_insoluble": 0.8800074491649866,
+   "diff": 0.026996311172842957,
+   "auc": 0.475,
+   "mwu_p_one_sided": 0.6118047472247434
+  },
+  "mean_prob": {
+   "mean_soluble": 0.9075855761766434,
+   "mean_insoluble": 0.8909463547170162,
+   "diff": 0.01663922145962715,
+   "auc": 0.455,
+   "mwu_p_one_sided": 0.6916126529492841
+  },
+  "prob_3000g_10min": {
+   "mean_soluble": 0.9761786967515945,
+   "mean_insoluble": 0.8217186741530895,
+   "diff": 0.154460022598505,
+   "auc": 0.71,
+   "mwu_p_one_sided": 0.011951572933779202
+  },
+  "prob_6000g": {
+   "mean_soluble": 0.8500932142138481,
+   "mean_insoluble": 0.8962468266487121,
+   "diff": -0.046153612434864044,
+   "auc": 0.35250000000000004,
+   "mwu_p_one_sided": 0.9462443201519972
+  },
+  "prob_32000g": {
+   "mean_soluble": 0.925096845626831,
+   "mean_insoluble": 0.9086109742522239,
+   "diff": 0.01648587137460711,
+   "auc": 0.39249999999999996,
+   "mwu_p_one_sided": 0.8803381483153316
+  },
+  "prob_eSol_21600g_30min": {
+   "mean_soluble": 0.9567817896604538,
+   "mean_insoluble": 0.9594892501831055,
+   "diff": -0.0027074605226516946,
+   "auc": 0.3275,
+   "mwu_p_one_sided": 0.9699446791185556
+  },
+  "prob_100000g": {
+   "mean_soluble": 0.829777305573225,
+   "mean_insoluble": 0.868665985018015,
+   "diff": -0.03888867944478991,
+   "auc": 0.45500000000000007,
+   "mwu_p_one_sided": 0.6916126529492841
+  }
+ },
+ "pass_gate_marginal_direction": true,
+ "api_requests_total": 44
+}

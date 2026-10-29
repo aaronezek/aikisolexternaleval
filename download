@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+t/
+.tcache/
+.venv/
+aikisol_src/
+data/zenodo/
+data/*.fasta
+*.pt
+*.aux
+*.log
+*.out

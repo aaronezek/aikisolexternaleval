@@ -1,0 +1,7 @@
+{
+ "train_n": 70031,
+ "train_rows_with_exact_seq_in_test": 1,
+ "of_which_label_concordant": 1,
+ "test_seqs_with_exact_dup_in_train": 1,
+ "eval_sample_seqs_with_exact_dup_in_train": 0
+}

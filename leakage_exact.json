@@ -1,0 +1,6 @@
+{
+ "test_4000_exact": 2594,
+ "eval_500_exact": 324,
+ "md5_list_n": 147574,
+ "note": "exact md5 of raw, M-prefixed, and M-stripped sequence vs canonical-147K md5 list"
+}

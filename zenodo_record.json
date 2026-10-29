@@ -1,0 +1,677 @@
+{
+ "created": "2026-05-13T20:29:22.745733+00:00",
+ "modified": "2026-05-13T20:29:25.148183+00:00",
+ "id": 20171586,
+ "conceptrecid": "20151817",
+ "doi": "10.5281/zenodo.20171586",
+ "conceptdoi": "10.5281/zenodo.20151817",
+ "doi_url": "https://doi.org/10.5281/zenodo.20171586",
+ "metadata": {
+  "title": "Aiki-Sol Dataset v0.2.0 \u2014 per-protocol calibrated protein solubility prediction (data, splits, checkpoints, results)",
+  "doi": "10.5281/zenodo.20171586",
+  "publication_date": "2026-05-13",
+  "description": "Companion deposit for the manuscript 'Protein solubility prediction is bottlenecked by training-pool curation, not architectural complexity' (Rajagopalan, Sharma Meda, Shastry &amp; Mysore, 2026). Contains: (Apache 2.0 tier) the 147,574-row canonical Aiki-Sol Dataset training pool, the 5-fold cluster-disjoint splits at 25% identity, the released Aiki-Sol v2 deployment checkpoint trained on the full pool, five per-fold checkpoints, per-cohort prediction CSVs, and aggregated result JSONs. (CC-BY-NC-ND 4.0 research-tier extension) Aiki-Sol v2 research-tier checkpoint, trained on the Aiki-Sol Dataset extended to 229,349 rows with additional upstream sources under restrictive licences; the trained checkpoint is shipped under the most-restrictive upstream tier, the underlying research-tier training CSV is not redistributed and is instead documented via a per-source manifest for independent reconstruction. Architecture: single fine-tuned ESM-2 650M backbone with a 6-output head (5 per-stringency outputs for 3,000g/10min, 6,000g, 32,000g, eSol-21,600g/30min, 100,000g; plus a dedicated stringency-marginal output for binary-only-labelled inputs). Code: https://github.com/aikium-public/aiki-sol",
+  "access_right": "open",
+  "creators": [
+   {
+    "name": "Rajagopalan, Riya",
+    "affiliation": "Aikium, Inc."
+   },
+   {
+    "name": "Sharma Meda, Radheesh",
+    "affiliation": "Aikium, Inc."
+   },
+   {
+    "name": "Shastry, Shankar",
+    "affiliation": "Aikium, Inc."
+   },
+   {
+    "name": "Mysore, Venkatesh",
+    "affiliation": "Aikium, Inc."
+   }
+  ],
+  "keywords": [
+   "protein solubility",
+   "protein language models",
+   "ESM-2",
+   "cluster-disjoint splits",
+   "MMseqs2",
+   "calibration",
+   "per-protocol prediction",
+   "deep learning",
+   "bioinformatics"
+  ],
+  "related_identifiers": [
+   {
+    "identifier": "https://github.com/aikium-public/aiki-sol",
+    "relation": "isSupplementTo",
+    "resource_type": "software",
+    "scheme": "url"
+   }
+  ],
+  "version": "0.2.0",
+  "language": "eng",
+  "resource_type": {
+   "title": "Dataset",
+   "type": "dataset"
+  },
+  "license": {
+   "id": "cc-by-4.0"
+  },
+  "communities": [
+   {
+    "id": "biology"
+   }
+  ],
+  "relations": {
+   "version": [
+    {
+     "index": 1,
+     "is_last": true,
+     "parent": {
+      "pid_type": "recid",
+      "pid_value": "20151817"
+     }
+    }
+   ]
+  },
+  "notes": "Files under apache_tier/ are Apache 2.0 (model weights + deposited code-compatible artefacts) or CC-BY 4.0 (data). Files under research_tier/ are CC-BY-NC-ND 4.0 (the trained checkpoint inherits the most-restrictive upstream source-licence tier; per-cohort predictions inherit the same tier). The research-tier extension training CSV is intentionally not deposited; the per-source manifest at research_tier/n3v2_source_manifest.csv documents what would be needed to reconstruct it from upstream distributors."
+ },
+ "title": "Aiki-Sol Dataset v0.2.0 \u2014 per-protocol calibrated protein solubility prediction (data, splits, checkpoints, results)",
+ "links": {
+  "self": "https://zenodo.org/api/records/20171586",
+  "self_html": "https://zenodo.org/records/20171586",
+  "preview_html": "https://zenodo.org/records/20171586?preview=1",
+  "doi": "https://doi.org/10.5281/zenodo.20171586",
+  "self_doi": "https://doi.org/10.5281/zenodo.20171586",
+  "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.20171586",
+  "reserve_doi": "https://zenodo.org/api/records/20171586/draft/pids/doi",
+  "parent": "https://zenodo.org/api/records/20151817",
+  "parent_html": "https://zenodo.org/records/20151817",
+  "parent_doi": "https://doi.org/10.5281/zenodo.20151817",
+  "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.20151817",
+  "self_iiif_manifest": "https://zenodo.org/api/iiif/record:20171586/manifest",
+  "self_iiif_sequence": "https://zenodo.org/api/iiif/record:20171586/sequence/default",
+  "files": "https://zenodo.org/api/records/20171586/files",
+  "media_files": "https://zenodo.org/api/records/20171586/media-files",
+  "latest": "https://zenodo.org/api/records/20171586/versions/latest",
+  "latest_html": "https://zenodo.org/records/20171586/latest",
+  "versions": "https://zenodo.org/api/records/20171586/versions",
+  "draft": "https://zenodo.org/api/records/20171586/draft",
+  "access_links": "https://zenodo.org/api/records/20171586/access/links",
+  "access_grants": "https://zenodo.org/api/records/20171586/access/grants",
+  "access_users": "https://zenodo.org/api/records/20171586/access/users",
+  "access_request": "https://zenodo.org/api/records/20171586/access/request",
+  "access": "https://zenodo.org/api/records/20171586/access",
+  "communities": "https://zenodo.org/api/records/20171586/communities",
+  "communities-suggestions": "https://zenodo.org/api/records/20171586/communities-suggestions",
+  "request_deletion": "https://zenodo.org/api/records/20171586/request-deletion",
+  "file_modification": "https://zenodo.org/api/records/20171586/file-modification",
+  "quota_increase": "https://zenodo.org/api/records/20171586/quota-increase",
+  "requests": "https://zenodo.org/api/records/20171586/requests"
+ },
+ "updated": "2026-05-13T20:29:25.148183+00:00",
+ "recid": "20171586",
+ "revision": 3,
+ "files": [
+  {
+   "id": "8dbf12ad-8482-4572-b99c-951f702d0eed",
+   "key": "README.md",
+   "size": 6409,
+   "checksum": "md5:4a08805e864b76bf9017edef3ce9a05f",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/README.md/content"
+   }
+  },
+  {
+   "id": "581eb3d8-5e67-4d18-be42-a5d95576b556",
+   "key": "zenodo_metadata.json",
+   "size": 2825,
+   "checksum": "md5:a763eadad68f9a4f6752584e0dfdb5fb",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/zenodo_metadata.json/content"
+   }
+  },
+  {
+   "id": "684a7d3e-0920-4852-a2c6-c5532b2b18bc",
+   "key": "CITATION.cff",
+   "size": 1294,
+   "checksum": "md5:d8496525655543822440d6e69bcee1f1",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/CITATION.cff/content"
+   }
+  },
+  {
+   "id": "afeff527-67ab-44c8-812a-2ce93d714e93",
+   "key": "DATA_SOURCES.md",
+   "size": 5565,
+   "checksum": "md5:9ef23f58df8798531cdd3db637c3cd2c",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/DATA_SOURCES.md/content"
+   }
+  },
+  {
+   "id": "1a5a91e9-8e80-4628-b2cf-c833781ce3c6",
+   "key": "apache_tier__predictions__canonical_147k_fold1__cohort_progsol_nesg_predictions.csv",
+   "size": 152476,
+   "checksum": "md5:9e24d48757d08af6e29ac4fbfdf361e0",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_fold1__cohort_progsol_nesg_predictions.csv/content"
+   }
+  },
+  {
+   "id": "a47024e3-6907-4868-ae7c-d7eb65d0dea6",
+   "key": "apache_tier__predictions__canonical_147k_fold4__cohort_progsol_nesg_predictions.csv",
+   "size": 151119,
+   "checksum": "md5:174bccf52d7aa40446ade52018dc41e8",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_fold4__cohort_progsol_nesg_predictions.csv/content"
+   }
+  },
+  {
+   "id": "68dfad42-6ff6-46a4-a12e-cb7480b87f0e",
+   "key": "apache_tier__predictions__canonical_147k_full__cohort_protsolm_dsressol_predictions.csv",
+   "size": 388900,
+   "checksum": "md5:e73edec2c96e85d02bcbd9c9120bca0d",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_full__cohort_protsolm_dsressol_predictions.csv/content"
+   }
+  },
+  {
+   "id": "3bf2ff60-0de5-470c-a7c5-e510443cee16",
+   "key": "LICENSE",
+   "size": 11342,
+   "checksum": "md5:7c71445c83736076d1d8180ee83c1841",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/LICENSE/content"
+   }
+  },
+  {
+   "id": "561cf1ac-ad8a-4dcf-bcc4-6faf3d08f5d9",
+   "key": "apache_tier__aikisol_v2_canonical_147k_fold1.pt",
+   "size": 2605701359,
+   "checksum": "md5:2c27aaf368410a732c4498af695a7193",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__aikisol_v2_canonical_147k_fold1.pt/content"
+   }
+  },
+  {
+   "id": "e96a0bc6-8804-45f5-a948-b910de9964f2",
+   "key": "apache_tier__aikisol_canonical_147k_train.csv",
+   "size": 58448945,
+   "checksum": "md5:b0bb6a23ded4475b4164efa4c614bd7c",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__aikisol_canonical_147k_train.csv/content"
+   }
+  },
+  {
+   "id": "ee6ecec5-04b3-44cf-af7a-7ade3af45bf4",
+   "key": "apache_tier__aikisol_v2_canonical_147k_fold0.pt",
+   "size": 2605701359,
+   "checksum": "md5:0100328f7ea4abd512f573cd25bf23fb",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__aikisol_v2_canonical_147k_fold0.pt/content"
+   }
+  },
+  {
+   "id": "c2f683c7-9a6b-49f2-8b16-c8ea9a53e7ae",
+   "key": "apache_tier__aikisol_canonical_147k_5fold_splits.tar.gz",
+   "size": 164527744,
+   "checksum": "md5:e3c0d8c2567ada9449e169ab38a2cb7c",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__aikisol_canonical_147k_5fold_splits.tar.gz/content"
+   }
+  },
+  {
+   "id": "70e16673-e2ad-4da4-aa4d-b6115e18d3e1",
+   "key": "research_tier__predictions__n3v2_229k_full__cohort_protsolm_dsressol_predictions.csv",
+   "size": 407119,
+   "checksum": "md5:f224e4ebdfc216ed9991394cde28abd0",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/research_tier__predictions__n3v2_229k_full__cohort_protsolm_dsressol_predictions.csv/content"
+   }
+  },
+  {
+   "id": "5013856d-6bd1-49c1-b29c-8750e6ecfbb8",
+   "key": "MANIFEST.json",
+   "size": 12308,
+   "checksum": "md5:065fe82d30dc8be20fe2aa8907ea288d",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/MANIFEST.json/content"
+   }
+  },
+  {
+   "id": "fb8bb0fc-0100-4bbe-9109-87c825423fc6",
+   "key": "research_tier__aikisol_v2_research_n3v2_229k_full.pt",
+   "size": 2605701359,
+   "checksum": "md5:b56e5b6337253f8818da44ae1fc76f0e",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/research_tier__aikisol_v2_research_n3v2_229k_full.pt/content"
+   }
+  },
+  {
+   "id": "7586c46b-62b6-486e-b5d8-49f0dbd5d586",
+   "key": "apache_tier__predictions__canonical_147k_fold0__cohort_protsolm_dsressol_predictions.csv",
+   "size": 387233,
+   "checksum": "md5:1dc03960a80d0fd65afc2586e8c3d4e3",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_fold0__cohort_protsolm_dsressol_predictions.csv/content"
+   }
+  },
+  {
+   "id": "c2734d00-f217-4b14-97a6-dd3b64b202b2",
+   "key": "apache_tier__aikisol_v2_canonical_147k_fold2.pt",
+   "size": 2605701359,
+   "checksum": "md5:8c051117e9b2aad2738b7d652698bea7",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__aikisol_v2_canonical_147k_fold2.pt/content"
+   }
+  },
+  {
+   "id": "52f6e5fd-8f94-4060-ac56-161a515d615e",
+   "key": "apache_tier__predictions__canonical_147k_fold3__cohort_protsolm_soluprot_predictions.csv",
+   "size": 191855,
+   "checksum": "md5:112e505dfde5a1f5b94676e0add4f62b",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_fold3__cohort_protsolm_soluprot_predictions.csv/content"
+   }
+  },
+  {
+   "id": "ec034b06-f875-46e8-a6cc-183f6e169241",
+   "key": "apache_tier__predictions__canonical_147k_fold4__cohort_protsolm_soluprot_predictions.csv",
+   "size": 190921,
+   "checksum": "md5:e6bee2c865a692311672b7fb6d14de10",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_fold4__cohort_protsolm_soluprot_predictions.csv/content"
+   }
+  },
+  {
+   "id": "fe37d6da-8f67-4a46-a148-de99a6ce9be1",
+   "key": "apache_tier__predictions__canonical_147k_fold3__cohort_protsolm_pdbsol_predictions.csv",
+   "size": 331310,
+   "checksum": "md5:4ebff1820931c513bca2b2acdb9fedb3",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_fold3__cohort_protsolm_pdbsol_predictions.csv/content"
+   }
+  },
+  {
+   "id": "2c01b730-22cf-45e1-b563-ac9e709961a5",
+   "key": "apache_tier__aikisol_v2_canonical_147k_fold3.pt",
+   "size": 2605701359,
+   "checksum": "md5:6fd5b2ed22b2983c17cd4cbfecdf8d6d",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__aikisol_v2_canonical_147k_fold3.pt/content"
+   }
+  },
+  {
+   "id": "2e83c948-0628-42fc-a48d-b0c76b46816a",
+   "key": "apache_tier__predictions__canonical_147k_full__cohort_progsol_psibiology_predictions.csv",
+   "size": 1344108,
+   "checksum": "md5:ccb9a398e078f212f4afdaf7865d9b08",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_full__cohort_progsol_psibiology_predictions.csv/content"
+   }
+  },
+  {
+   "id": "7295b555-b41a-4954-9280-85c00b716d14",
+   "key": "apache_tier__predictions__canonical_147k_fold0__cohort_protsolm_soluprot_predictions.csv",
+   "size": 191067,
+   "checksum": "md5:87bfb35026dc7fdc168bb8a177f27cb7",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_fold0__cohort_protsolm_soluprot_predictions.csv/content"
+   }
+  },
+  {
+   "id": "bf238977-3cff-4af4-a040-c7eebf8e903f",
+   "key": "apache_tier__predictions__canonical_147k_fold4__cohort_protsolm_pdbsol_predictions.csv",
+   "size": 330777,
+   "checksum": "md5:ada1760e836cc00b2e0f2121ddbfe1fa",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_fold4__cohort_protsolm_pdbsol_predictions.csv/content"
+   }
+  },
+  {
+   "id": "b407686f-9413-45ac-9f60-1dca51e6f03e",
+   "key": "apache_tier__predictions__canonical_147k_fold3__cohort_protsolm_dsressol_predictions.csv",
+   "size": 388189,
+   "checksum": "md5:2b3901036c5a7d5b0a358ba2778143b6",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_fold3__cohort_protsolm_dsressol_predictions.csv/content"
+   }
+  },
+  {
+   "id": "0327c53c-63e1-4d5b-b994-b51ad4cd8764",
+   "key": "apache_tier__predictions__canonical_147k_fold3__cohort_progsol_nesg_predictions.csv",
+   "size": 151354,
+   "checksum": "md5:c6c5eba785972418ae8b89d2ab5c666e",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_fold3__cohort_progsol_nesg_predictions.csv/content"
+   }
+  },
+  {
+   "id": "cbd96220-874f-47a6-9096-9cc54c2ea759",
+   "key": "apache_tier__predictions__canonical_147k_fold2__cohort_protsolm_pdbsol_predictions.csv",
+   "size": 331881,
+   "checksum": "md5:9b7cb832c02b7745af7dab2068d76a7d",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_fold2__cohort_protsolm_pdbsol_predictions.csv/content"
+   }
+  },
+  {
+   "id": "889b0c75-9359-4623-ada0-b3193142e660",
+   "key": "research_tier__predictions__n3v2_229k_full__cohort_protsolm_pdbsol_predictions.csv",
+   "size": 345962,
+   "checksum": "md5:599311df7f30b5015169c3a62cb6f4a0",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/research_tier__predictions__n3v2_229k_full__cohort_protsolm_pdbsol_predictions.csv/content"
+   }
+  },
+  {
+   "id": "c953fdb5-615e-4fbd-b047-541b28dca51c",
+   "key": "apache_tier__predictions__canonical_147k_fold1__cohort_protsolm_dsressol_predictions.csv",
+   "size": 390424,
+   "checksum": "md5:821b66020f0680fca047375337d99a69",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_fold1__cohort_protsolm_dsressol_predictions.csv/content"
+   }
+  },
+  {
+   "id": "489dd1b6-0177-47af-b095-ff9b4e9c00b7",
+   "key": "apache_tier__predictions__canonical_147k_fold1__cohort_progsol_psibiology_predictions.csv",
+   "size": 1346705,
+   "checksum": "md5:d303958683f6e92ba7bda7a574022e3f",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_fold1__cohort_progsol_psibiology_predictions.csv/content"
+   }
+  },
+  {
+   "id": "f0eec459-5607-4142-83f7-85dab999602b",
+   "key": "apache_tier__aikisol_v2_canonical_147k_fold4.pt",
+   "size": 2605701359,
+   "checksum": "md5:204b7bffd4cefe49436909ea9f8881d7",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__aikisol_v2_canonical_147k_fold4.pt/content"
+   }
+  },
+  {
+   "id": "a1273678-f703-458d-850d-fd0f23b69f5c",
+   "key": "apache_tier__aikisol_v2_canonical_147k_full.pt",
+   "size": 2605701359,
+   "checksum": "md5:92ab0cc77dfaa78a66094dbf9493b38d",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__aikisol_v2_canonical_147k_full.pt/content"
+   }
+  },
+  {
+   "id": "bc7d6653-69de-4c85-8732-53970ae7e4eb",
+   "key": "apache_tier__predictions__canonical_147k_fold0__cohort_progsol_nesg_predictions.csv",
+   "size": 151143,
+   "checksum": "md5:932ee1364ddc0d79f775ea08795c14fd",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_fold0__cohort_progsol_nesg_predictions.csv/content"
+   }
+  },
+  {
+   "id": "1dea1acb-016e-43a9-b0aa-5d88db16db9b",
+   "key": "apache_tier__predictions__canonical_147k_fold0__cohort_protsolm_pdbsol_predictions.csv",
+   "size": 330623,
+   "checksum": "md5:9460cf506e3df101b8d1379a7a40cab3",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_fold0__cohort_protsolm_pdbsol_predictions.csv/content"
+   }
+  },
+  {
+   "id": "bdf4df51-2c9d-4e35-afc2-1c466f0a152f",
+   "key": "research_tier__predictions__n3v2_229k_full__cohort_progsol_psibiology_predictions.csv",
+   "size": 1372334,
+   "checksum": "md5:55a26851acb852b5c0132a8c270b9a1c",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/research_tier__predictions__n3v2_229k_full__cohort_progsol_psibiology_predictions.csv/content"
+   }
+  },
+  {
+   "id": "a98babe6-15b7-4507-8269-8f52662fc783",
+   "key": "apache_tier__canonical_147k_md5.txt",
+   "size": 4869942,
+   "checksum": "md5:4739f3943c54587bd46117e1e4f2614e",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__canonical_147k_md5.txt/content"
+   }
+  },
+  {
+   "id": "da539ffb-ca3d-48ac-bb51-6b8a041bc7ab",
+   "key": "apache_tier__predictions__canonical_147k_fold1__cohort_protsolm_soluprot_predictions.csv",
+   "size": 192872,
+   "checksum": "md5:dcf186dc43b3a2e0249d856ff9698a09",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_fold1__cohort_protsolm_soluprot_predictions.csv/content"
+   }
+  },
+  {
+   "id": "879e555b-45b2-4d75-8b43-e9d776197747",
+   "key": "apache_tier__results__canonical_147k_fold3_results.json",
+   "size": 2973,
+   "checksum": "md5:e864a25011b744aac380c080da592ebb",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__results__canonical_147k_fold3_results.json/content"
+   }
+  },
+  {
+   "id": "9e76b834-dc9e-4fe1-845c-2752cd8c3466",
+   "key": "apache_tier__predictions__canonical_147k_fold0__cohort_progsol_psibiology_predictions.csv",
+   "size": 1340420,
+   "checksum": "md5:037bef427058e83e8d87f7988bdf8e37",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_fold0__cohort_progsol_psibiology_predictions.csv/content"
+   }
+  },
+  {
+   "id": "686c39b5-f64a-4493-a7ba-054d01f03876",
+   "key": "apache_tier__results__canonical_147k_fold2_results.json",
+   "size": 2972,
+   "checksum": "md5:e25dcf94703bf8deab2fb3777ece1832",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__results__canonical_147k_fold2_results.json/content"
+   }
+  },
+  {
+   "id": "05e868cf-2aed-42e4-bc0d-6e93c53ac3a0",
+   "key": "apache_tier__predictions__canonical_147k_fold1__cohort_protsolm_pdbsol_predictions.csv",
+   "size": 333770,
+   "checksum": "md5:7ad024d05319328b238bf8f5a1cdd1ce",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_fold1__cohort_protsolm_pdbsol_predictions.csv/content"
+   }
+  },
+  {
+   "id": "482be959-37c7-40df-9b8a-8ad902f4a687",
+   "key": "apache_tier__predictions__canonical_147k_fold2__cohort_progsol_nesg_predictions.csv",
+   "size": 151804,
+   "checksum": "md5:93abf209dbfb9cade6b7a3532a069982",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_fold2__cohort_progsol_nesg_predictions.csv/content"
+   }
+  },
+  {
+   "id": "034a21c3-0a13-4896-993c-b278cf255bf4",
+   "key": "apache_tier__predictions__canonical_147k_fold2__cohort_protsolm_soluprot_predictions.csv",
+   "size": 191772,
+   "checksum": "md5:c6bae5a583f73810c7d4c6b73ba9e0c0",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_fold2__cohort_protsolm_soluprot_predictions.csv/content"
+   }
+  },
+  {
+   "id": "f03dfb88-ec75-4bf0-91ef-e03a54e44894",
+   "key": "apache_tier__predictions__canonical_147k_fold2__cohort_progsol_psibiology_predictions.csv",
+   "size": 1344381,
+   "checksum": "md5:6945f029bce56761ce893732af54b759",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_fold2__cohort_progsol_psibiology_predictions.csv/content"
+   }
+  },
+  {
+   "id": "bb016aa9-3a48-4614-b983-ed5aaeaf4e9d",
+   "key": "apache_tier__predictions__canonical_147k_fold2__cohort_protsolm_dsressol_predictions.csv",
+   "size": 388922,
+   "checksum": "md5:c9b0b2a54f4eb23f569ed9ea71e99edf",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_fold2__cohort_protsolm_dsressol_predictions.csv/content"
+   }
+  },
+  {
+   "id": "449eac44-ac3c-4b40-b33c-a4677d72a099",
+   "key": "apache_tier__results__canonical_147k_full_results.json",
+   "size": 2975,
+   "checksum": "md5:4d217ad701fd4d3d442437ededc0af4b",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__results__canonical_147k_full_results.json/content"
+   }
+  },
+  {
+   "id": "3b44ec10-90ac-4429-92da-d1ee1bdf7642",
+   "key": "apache_tier__predictions__canonical_147k_fold3__cohort_progsol_psibiology_predictions.csv",
+   "size": 1346166,
+   "checksum": "md5:65ba3193d4defee939c63c67ef9c42a1",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_fold3__cohort_progsol_psibiology_predictions.csv/content"
+   }
+  },
+  {
+   "id": "7d1f2835-9591-4815-a09f-218a91f2a440",
+   "key": "apache_tier__predictions__canonical_147k_fold4__cohort_progsol_psibiology_predictions.csv",
+   "size": 1340911,
+   "checksum": "md5:840a3c1dd61c8dc3a77bd7de83a7728c",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_fold4__cohort_progsol_psibiology_predictions.csv/content"
+   }
+  },
+  {
+   "id": "ac9bdb21-83de-4b71-bea9-b66a73cdaf44",
+   "key": "apache_tier__predictions__canonical_147k_fold4__cohort_protsolm_dsressol_predictions.csv",
+   "size": 387888,
+   "checksum": "md5:2a8c7ec5dde328b5582bca19a58ba9ce",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_fold4__cohort_protsolm_dsressol_predictions.csv/content"
+   }
+  },
+  {
+   "id": "61971348-500b-487c-8fab-4f10c494eafa",
+   "key": "apache_tier__predictions__canonical_147k_full__cohort_progsol_nesg_predictions.csv",
+   "size": 151677,
+   "checksum": "md5:9567eef6801e52b0f0c10d83d5edf991",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_full__cohort_progsol_nesg_predictions.csv/content"
+   }
+  },
+  {
+   "id": "19c3958c-24cb-45e2-8455-84241221401f",
+   "key": "apache_tier__predictions__canonical_147k_full__cohort_protsolm_pdbsol_predictions.csv",
+   "size": 331226,
+   "checksum": "md5:9bbb059113aa94b260d15e03e265d94d",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_full__cohort_protsolm_pdbsol_predictions.csv/content"
+   }
+  },
+  {
+   "id": "74589ef1-6086-4123-9b16-cf9437fd4934",
+   "key": "apache_tier__predictions__canonical_147k_full__cohort_protsolm_soluprot_predictions.csv",
+   "size": 191356,
+   "checksum": "md5:e81235666caa7b0606f9548d738fdefd",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__predictions__canonical_147k_full__cohort_protsolm_soluprot_predictions.csv/content"
+   }
+  },
+  {
+   "id": "42672c5a-d680-4dcf-ac89-d4ac7a8e67c0",
+   "key": "apache_tier__results__canonical_147k_fold0_results.json",
+   "size": 2971,
+   "checksum": "md5:c03c3ab51b661f89348de772b3b93a35",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__results__canonical_147k_fold0_results.json/content"
+   }
+  },
+  {
+   "id": "f2051b6d-faef-45b3-b19c-190bc492b827",
+   "key": "apache_tier__results__canonical_147k_fold1_results.json",
+   "size": 2973,
+   "checksum": "md5:9f4ce60cf36e4807beb58eb384e811c7",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__results__canonical_147k_fold1_results.json/content"
+   }
+  },
+  {
+   "id": "e0b39dfa-06bd-4959-aeff-5a5a6a607d42",
+   "key": "CHANGELOG.md",
+   "size": 1895,
+   "checksum": "md5:244740ca76ca8a5faa59a32b622ff5fd",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/CHANGELOG.md/content"
+   }
+  },
+  {
+   "id": "0de78421-85df-4ce1-b763-fff9153a9d5f",
+   "key": "apache_tier__results__canonical_147k_fold4_results.json",
+   "size": 2970,
+   "checksum": "md5:7b2d886a22dd109456aea4209bfd28ab",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/apache_tier__results__canonical_147k_fold4_results.json/content"
+   }
+  },
+  {
+   "id": "4912592f-0a86-4031-8512-b31acc7a537c",
+   "key": "research_tier__predictions__n3v2_229k_full__cohort_progsol_nesg_predictions.csv",
+   "size": 156437,
+   "checksum": "md5:9d9fa96a3e331ce46bc5ad1cf45caa81",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/research_tier__predictions__n3v2_229k_full__cohort_progsol_nesg_predictions.csv/content"
+   }
+  },
+  {
+   "id": "ad5fbd74-5170-4ca1-b830-0fbab8dcaab8",
+   "key": "research_tier__predictions__n3v2_229k_full__cohort_protsolm_soluprot_predictions.csv",
+   "size": 199414,
+   "checksum": "md5:799ddd711fe42a72402c8bb145c1ceb6",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/research_tier__predictions__n3v2_229k_full__cohort_protsolm_soluprot_predictions.csv/content"
+   }
+  },
+  {
+   "id": "1cfeecd3-79d2-43b5-9d40-60b715ab09ad",
+   "key": "research_tier__results__n3v2_229k_full_results.json",
+   "size": 3527,
+   "checksum": "md5:9353462aa857da1002ea9f66d73940c0",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/research_tier__results__n3v2_229k_full_results.json/content"
+   }
+  },
+  {
+   "id": "9c417018-5b58-4941-9530-9aab7a9bd64f",
+   "key": "research_tier__n3v2_source_manifest.csv",
+   "size": 863,
+   "checksum": "md5:57c59dfa1bcaf79a89a027adc5d667f7",
+   "links": {
+    "self": "https://zenodo.org/api/records/20171586/files/research_tier__n3v2_source_manifest.csv/content"
+   }
+  }
+ ],
+ "swh": {},
+ "owners": [
+  {
+   "id": "1614975"
+  }
+ ],
+ "status": "published",
+ "stats": {
+  "downloads": 1413,
+  "unique_downloads": 1230,
+  "views": 139,
+  "unique_views": 137,
+  "version_downloads": 1338,
+  "version_unique_downloads": 1158,
+  "version_unique_views": 103,
+  "version_views": 105
+ },
+ "state": "done",
+ "submitted": true
+}

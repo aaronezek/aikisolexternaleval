@@ -1,0 +1,11 @@
+numpy>=2.0
+pandas
+scipy
+scikit-learn>=1.5
+biopython
+matplotlib
+requests
+torch>=2.1
+transformers>=4.40,<5.0
+python-pptx
+Pillow
