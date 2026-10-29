@@ -1,5 +1,7 @@
 # Independent external evaluation of Aiki-Sol (public beta)
 
+Author: Aaron Ezekiel (undergraduate, UC Berkeley).
+
 A pre-registered, CPU-only check of Aikium's Aiki-Sol protein-solubility predictor, written as an outside user's validation rather than a review. The short paper source is in `paper/`; a one-slide summary is in `slides/`.
 
 ## Headline result
