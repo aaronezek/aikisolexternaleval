@@ -38,8 +38,3 @@ Python packages tested with: numpy 2.4, pandas, scipy 1.17, scikit-learn 1.9, bi
 - A supplementary direction check on 100 benchmark train-split sequences was added after the hand-picked Gate 1b controls were only weakly separated.
 - The nanobody subset was not done (no public labelled VHH solubility set found).
 - Compiled PDF: see `paper/` (the sandbox used could not run a TeX engine; compile `aikisol_eval_paper.tex` with any TeX Live / MiKTeX / Overleaf, with `figures/` next to `paper/`).
-
-## Notes
-- No licence has been chosen for this repository's code; add one before publishing.
-- `data/eval_sample.csv` and some `results/` files contain sequences from the public UESolDS benchmark (Zhang et al. 2024, Brief Bioinform 25(5):bbae404); check that repository's licence before redistributing.
-- Aiki-Sol code and weights are Apache-2.0 / CC-BY per their repository; they are not vendored here.
